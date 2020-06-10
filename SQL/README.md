@@ -6,7 +6,9 @@ sudo apt update
 sudo apt install mysql-server mysql-client
 ```
 ### START SERVER
+```
 sudo service mysql start
+```
 - to start sql server
 - used after instalation 
 - may be later if somehow got stopped
