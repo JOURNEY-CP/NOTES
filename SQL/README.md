@@ -19,3 +19,10 @@ sudo mysql
 ```
 - you may use from nodejs/php/ any means
 
+## possible errors While Using from nodejs
+### Auth mode not supported
+- run this in mysql terminal
+```
+ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+ flush privileges;
+ ```
