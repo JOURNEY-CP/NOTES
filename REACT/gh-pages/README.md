@@ -20,7 +20,7 @@ from project folder
 - nice you have completed set up
 - push to git as you do every time
 - deploy when needed
-#### code
+#### code   (not need to do this once you followed above procedure)
 run this code to do all the above points at once 🙂🙂🙂
 
 !!!!!!!!note: works fine for default readme file which is generated at first of create-react-app 
