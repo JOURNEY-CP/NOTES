@@ -22,7 +22,9 @@ from project folder
 - deploy when needed
 #### code
 run this code to do all the above points at once 🙂🙂🙂
+
 !!!!!!!!note: works fine for default readme file which is generated at first of create-react-app 
+
 !!!!!!!!so be cautious to use this code directly
 ```
 sed -i '5i\  "homepage": "http://gitname.github.io/react-gh-pages",' ./package.json
