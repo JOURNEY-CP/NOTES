@@ -16,7 +16,7 @@ npm install gh-pages --save-dev
 ```
 from project folder 
 
--nice you have completed set up
+- nice you have completed set up
 - push to git as you do every time
 - deploy when needed
 
