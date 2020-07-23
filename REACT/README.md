@@ -7,5 +7,5 @@
  - Now, check wheater npm is installed press ``` npm -v ``` in terminal,
     if you get 3.5.2(example) npm is also installed
  - Now, press  ``` sudo npm install -g create-react-app ```
- - Now,press ``` create-react-app (name of directory in which you want to create react) ```
+ - Now,press ``` create-react-app frontend(name of directory in which you want to create react) ```
  - check if it is done or not...
