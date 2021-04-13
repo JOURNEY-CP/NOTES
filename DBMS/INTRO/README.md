@@ -73,4 +73,7 @@ So we need to optamize two feutures
    - Core Implementation
    - Duty of database system core desinger
    - Ex : As a part of normal app development we dont use this
-  
+
+### Abstraction
+- We must ensure that user from view level to not see any data from logical level or physical level.
+- And this is maintained in 3 level architecture
