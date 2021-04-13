@@ -77,7 +77,13 @@ So we need to optamize two feutures
 ### Abstraction
 - We must ensure that user from view level to not see any data from logical level or physical level.
 - And this is maintained in 3 level architecture
+
 ### Schema
 - The design of database in View layer is View schema
 - The design of database in Logical layer is Logical schema
 - The design of database in View layer is View schema
+
+### Instance
+- The core desidn is schema and all details(rows) of a particular thing is instance
+- In marks sheet (NAME,PHY_MARKS,CHE_MARKS) (all these atributes are combindly called as logical schema)
+- each roe (describing marks of a particular student) is called instance
