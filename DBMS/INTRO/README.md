@@ -86,4 +86,19 @@ So we need to optamize two feutures
 ### Instance
 - The core desidn is schema and all details(rows) of a particular thing is instance
 - In marks sheet (NAME,PHY_MARKS,CHE_MARKS) (all these atributes are combindly called as logical schema)
-- each roe (describing marks of a particular student) is called instance
+- each row (describing marks of a particular student) is called Record
+- The data stored in database at a particular moment of time is called instance of database.
+
+## Database Languages
+1. Data Definition Language (DDL)
+    - Used to create the schema, tables indexes etc
+    - CREATE ALTER DROP TRUNCATE RENAME COMMENT
+2. Data Manipulation Language (DML)
+    - Used to add and manipulate data 
+    - SELECT INSERT UPDATE DELETE
+3. Data Control language (DCL)
+    - Used to define access to users
+    - GRANT REVOKE
+4. Transaction Control Language(TCL)
+    - The changes in the database that we made using DML commands are either performed or rollbacked using TCL.
+    - COMMIT ROLLBACK
