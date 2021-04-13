@@ -77,3 +77,7 @@ So we need to optamize two feutures
 ### Abstraction
 - We must ensure that user from view level to not see any data from logical level or physical level.
 - And this is maintained in 3 level architecture
+### Schema
+- The design of database in View layer is View schema
+- The design of database in Logical layer is Logical schema
+- The design of database in View layer is View schema
