@@ -50,6 +50,27 @@ So we need to optamize two feutures
 ### three-tier
 - Client asks data from his app and it askes data to app at server and in contacts db server
 - Client -> Client App ------------> Server App -> Db Server
+- user -> React App ----------------> ExpressServerApp->SQL_DB
 - Components
   - Client has user and db app
   - server has server Db App and db server
+- More secure
+- Mostly used
+
+## DBMS Three Level Architecture (3 tier)
+1. External Level
+   - this is the view level
+   - which is on client side
+   - Ex : React App
+2. Conceptual level
+   - Logical level
+   - We write core logics here
+   - We specify access to different people here
+   - Duty of Database Administrator
+   - Ex : Creating tables and db part of nodejs App
+3. Internal level
+   - The physical Layer
+   - Core Implementation
+   - Duty of database system core desinger
+   - Ex : As a part of normal app development we dont use this
+  
