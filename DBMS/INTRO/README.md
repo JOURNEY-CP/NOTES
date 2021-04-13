@@ -35,3 +35,21 @@ So we need to optamize two feutures
 - Complex in understanding
 - May effect performance in some apps
 
+## Architecture
+### single tier
+- local database
+- Client -> Client App/local db
+- client has complete data
+- no need on internet
+### two-tier
+- Client dirctly access data from sql server
+- Client -> Client App ------------> Db Server
+- Components
+  - Client has user and db app
+  - server has only db server
+### three-tier
+- Client asks data from his app and it askes data to app at server and in contacts db server
+- Client -> Client App ------------> Server App -> Db Server
+- Components
+  - Client has user and db app
+  - server has server Db App and db server
