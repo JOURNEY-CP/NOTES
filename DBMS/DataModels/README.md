@@ -84,4 +84,19 @@ Relationship tells how two entities are related. Example: Teacher works for depa
   - It specifies that there might exist some courses for which no enrollments are made.
 
 ![Participation ER-diagram](https://www.gatevidyalay.com/wp-content/uploads/2018/05/Participation-in-DBMS-Example.png)
+
+### DBMS Generalization:
+Generalisation is a process in which common attributes of more than one entities form new entity.This newly formed entity is called a generalized entity.Lets look with an example, 
+
+The ER diagram before generalization looks like this:
+![Participation ER-diagram](https://beginnersbook.com/wp-content/uploads/2018/11/DBMS_Generalization.png)
+
+The ER diagram after generalization looks like this:
+![Participation ER-diagram](https://beginnersbook.com/wp-content/uploads/2018/11/DBMS_Generalization_done.png)
+
+- NOTE:
+  - Generalization uses bottom-up approach where two or more lower level entities combine together to form a higher level new entity.
+  - The new generalized entity can further combine together with lower level entity to create a further higher level generalized entity.
+
+
   
