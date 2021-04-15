@@ -6,3 +6,5 @@ An ER model describes the structure of a database with the help of a diagram, wh
 - An ER diagram shows the relationship among entity sets
 - An entity set is a group of similar entities and these entities can have attributes
 - In terms of DBMS, an entity is a table or attribute of a table in database, so by showing relationship among tables and their attributes, ER diagram shows the complete logical structure of a database.
+
+![ER-diagram](https://beginnersbook.com/wp-content/uploads/2015/04/E-R-Diagram.png)
