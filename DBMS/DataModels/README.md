@@ -20,17 +20,18 @@ In above diagram,
   
 3 components of ER-diagram:
 
-#### Entity:
+#### 1.Entity:
 Entity is a real-world thing. It can be a person, place, or even a concept. Example: Teachers, Students, Course, Building, Department, etc are some of the entities of a School Management System.
 ##### Weak Entity:
 - An entity that cannot be uniquely identified by its own attributes and relies on the relationship with other entity is called weak entity.
 - The weak entity is represented by a double rectangle.
 - For example, a bank account cannot be uniquely identified without knowing the bank to which the account belongs, so bank account is a weak entity.
-#### Attribute:
+
+#### 2.Attribute:
 An entity contains a real-world property called attribute. This is the characteristics of that attribute. Example: The entity teacher has the property like teacher id, salary, age, etc.
 4 Types of Attributes:
 
-##### Key Attrubute:
+##### Key Attribute:
 - A key attribute can uniquely identify an entity from an entity set.
 - For example, student roll number can uniquely identify a student from a set of students.
 - Key attribute is represented by oval same as other attributes however the text of key attribute is underlined.
@@ -48,6 +49,25 @@ An entity contains a real-world property called attribute. This is the character
 - A derived attribute is one whose value is dynamic and derived from another attribute.
 - It is represented by dashed oval in an ER Diagram.
 - For example, A Person age is a derived attribute as it changes over time and can be derived from another attribute (Date of birth).
-#### Relationship:
-  - Relationship tells how two attributes are related. Example: Teacher works for a department
+  
+#### 3.Relationship:
+Relationship tells how two entities are related. Example: Teacher works for department.Here, "works for" is relationship.4 types of Relationship.
+
+##### One to One:
+- when single instance of one entity is associated with single instance of other entity then it is called one to one relationship.
+- For example, a person has only one passport and a passport is given to one person.
+
+##### One to Many:
+- When a single instance of an entity is associated with more than one instances of another entity then it is called one to many relationship.
+- For example, a customer can place many orders but a order cannot be placed by many customers.
+
+##### Many to One:
+- When a more than one instances of an entity is associated with single instance of another entity then it is called many to one relationship.
+- For example, many students can study in a single college but a student cannot study in many colleges at the same time.
+
+##### Many to Many:
+- When more than one instances of an entity is associated with more than one instances of another entity then it is called many to many relationship.
+- For example, a student can be assigned to many projects and a project can be assigned to many students.
+
+
   
