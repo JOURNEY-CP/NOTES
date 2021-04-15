@@ -6,10 +6,10 @@
 
 ## [Data Models](DataModels)
 
-## [Relational Database(RelationalDatabases)
+## [Relational Database](RelationalDatabases)
 
 ## [Normalization](Normalization)
 
-## [Transaction Management](Transaction Management)
+## [Transaction Management](TransactionManagement)
 
 ## [Concurency Control](ConcurencyControl)
