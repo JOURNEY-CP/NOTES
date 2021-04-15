@@ -13,3 +13,7 @@ Private notes on various topics
 ## [HEROKU](HEROKU)
 
 ## [DBMS](DBMS)
+
+## [Coding Concepts of some topics](https://journey-cp.github.io/LEARN/)
+
+## [Practice Problems on some topics](https://journey-cp.github.io/j10/)
