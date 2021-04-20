@@ -98,5 +98,13 @@ The ER diagram after generalization looks like this:
   - Generalization uses bottom-up approach where two or more lower level entities combine together to form a higher level new entity.
   - The new generalized entity can further combine together with lower level entity to create a further higher level generalized entity.
 
+### DBMS Specialization:
+In specialization, an entity is divided into sub-entities based on their characteristics. It is a top-down approach where higher level entity is specialized into two or more lower level entities.
+For example, Consider an entity employee which can be further classified as sub-entities Technician, Engineer & Accountant because these sub entities have some distinguish attributes.
+
+The ER diagram after generalization looks like this:
+![specialization ER-diagram](https://beginnersbook.com/wp-content/uploads/2018/11/DBMS_Specialization.png)
+
+
 
   
