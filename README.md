@@ -14,6 +14,10 @@ Private notes on various topics
 
 ## [DBMS](DBMS)
 
+## [OS](OS)
+
+## [NETWORKING](NETWORKING)
+
 ## [Coding Concepts of some topics](https://journey-cp.github.io/LEARN/)
 
 ## [Practice Problems on some topics](https://journey-cp.github.io/j10/)
