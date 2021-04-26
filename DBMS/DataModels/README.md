@@ -102,8 +102,15 @@ The ER diagram after generalization looks like this:
 In specialization, an entity is divided into sub-entities based on their characteristics. It is a top-down approach where higher level entity is specialized into two or more lower level entities.
 For example, Consider an entity employee which can be further classified as sub-entities Technician, Engineer & Accountant because these sub entities have some distinguish attributes.
 
-The ER diagram after generalization looks like this:
 ![specialization ER-diagram](https://beginnersbook.com/wp-content/uploads/2018/11/DBMS_Specialization.png)
+
+### DBMS Aggregation:
+Aggregation is a process in which a single entity alone is not able to make sense in a relationship so the relationship of two entities acts as one entity
+
+![Aggregation ER-diagram](https://beginnersbook.com/wp-content/uploads/2018/11/DBMS_Aggregration.png)
+
+in real world example, we know Manager not only manages employee working under them but also project as well.In such scenario, if entity "Manager" makes “manages” relationship with either “Employee” or “Project” entity alone then it will not make any sense because he has to manage both.In these cases the relationship of two entities acts as one entity. In our example, the relationship “Works-On” between “Employee” & “Project” acts as one entity that has a relationship “Manages” with the entity “Manager”.
+
 
 
 
