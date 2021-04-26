@@ -119,11 +119,17 @@ In Relational Model, Data and relationships are represented by collection of int
 
 ## Hierarchical Model:
 This database model organises data into a tree-like-structure, with a single root, to which all the other data is linked. The heirarchy starts from the Root data, and expands like a tree, adding child nodes to the parent nodes.
+- Each child node has only single parent node.
 - This model efficiently describes many real-world relationships like index of a book, recipes etc.
 - The main drawback of this model is that, it can have only one to many relationships between nodes.
 for example, one department can have many courses, many professors and of-course many students
 
 ![Hierarchial model](https://www.studytonight.com/dbms/images/hierarchical-dbms-model.png)
 
+## Network Model:
+This is an extension of the Hierarchical model. In this model data is organised more like a graph, and are allowed to have more than one parent node.
+- In this database model data is more related as more relationships are established in this database model. Also, as the data is more related, hence accessing the data is also easier and fast.
+- This database model was used to map many-to-many data relationships.
+- This was the most widely used database model, before Relational Model was introduced.
 
-  
+  ![network model](https://www.studytonight.com/dbms/images/network-dbms-model.png)
