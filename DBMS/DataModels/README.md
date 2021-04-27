@@ -132,4 +132,53 @@ This is an extension of the Hierarchical model. In this model data is organised 
 - This database model was used to map many-to-many data relationships.
 - This was the most widely used database model, before Relational Model was introduced.
 
-  ![network model](https://www.studytonight.com/dbms/images/network-dbms-model.png)
+![network model](https://www.studytonight.com/dbms/images/network-dbms-model.png)
+
+## Constraints in DBMS:
+constraints enforce limits to the data or type of the data that can be inserted/updated/deleted from a table.The whole purpose of constraints is to maintain the data integrity during an update/delete/insert into a table.
+
+Types of Constraints:
+### NOT NULL:
+- NOT NULL constraint makes sure that a column does not hold NULL value.
+-  When we don’t provide value for a particular column while inserting a record into a table, it takes NULL value by default.
+  
+### UNIQUE:
+- UNIQUE Constraint enforces a column or set of columns to have unique values.
+- If a column has a unique constraint, it means that particular column cannot have duplicate values in a table.
+
+### DEFAULT:
+- The DEFAULT constraint provides a default value to a column when there is no value provided while inserting a record into a table.
+
+### CHECK:
+- This constraint is used for specifying range of values for a particular column of a table.
+- When this constraint is being set on a column, it ensures that the specified column must have the value falling in the specified range.
+
+### Key Constraints:
+#### PRIMARY KEY:
+- Primary key uniquely identifies each record in a table.
+- It must have unique values and cannot contain nulls.
+#### FOREIGN KEY:
+- Foreign keys are columns of the table that points to primary key of another table.
+- They act as cross-reference between tables.
+
+### Domain Constraints:
+- Each table has certain set of columns and each column allows a same type of data, based on its data type. The column does not accept values of any other data type.
+- Domain constraints are user defined data type and we can define them like this:
+  - Domain Constraint = data type + Constraints (NOT NULL / UNIQUE / PRIMARY KEY / FOREIGN KEY / CHECK / DEFAULT)
+
+```CREATE TABLE Customer (
+customer_id int PRIMARY KEY NOT NULL,
+first_name varchar(20),
+last_name varchar(20)
+);
+
+CREATE TABLE Order (
+order_id int PRIMARY KEY NOT NULL,
+customer_id int,
+order_details varchar(50),
+constraint fk_Customers foreign key (customer_id) 
+       references dbo.Customer
+);```
+
+### Mapping Constraints:
+- 
