@@ -166,7 +166,8 @@ Types of Constraints:
 - Domain constraints are user defined data type and we can define them like this:
   - Domain Constraint = data type + Constraints (NOT NULL / UNIQUE / PRIMARY KEY / FOREIGN KEY / CHECK / DEFAULT)
 
-```CREATE TABLE Customer (
+```
+CREATE TABLE Customer (
 customer_id int PRIMARY KEY NOT NULL,
 first_name varchar(20),
 last_name varchar(20)
@@ -178,7 +179,8 @@ customer_id int,
 order_details varchar(50),
 constraint fk_Customers foreign key (customer_id) 
        references dbo.Customer
-);```
+);
+```
 
 ### Mapping Constraints:
 - 
