@@ -1,6 +1,23 @@
 # Process Data Structures and Satte Transictions
 ## Process Management
-## Basic definations
+A process is basically a program in execution. The execution of a process must progress in a sequential fashion.
+
+A Program/Process here Refers any code
+```cpp
+// Example code
+#include<iostream>
+int main(){
+  int a,b;
+  cin>>a>>b;
+  cout<<a+b<<endl;
+}
+```
+Memory of every process is broadly devided into 4 types
+1. **Stack** : Where all temporary data such as method/function parameters, return address and local variables etc will be present.
+2. **Heap** :  temporary data such as method/function parameters, return address and local variables.
+3. **Text** : Other core data like program counter and data of registers involved
+4. **Data**: Globl and static variables 
+
 ## Process table
 The process table is a data structure maintained by the operating system to facilitate context switching and scheduling, and other activities
 
@@ -25,12 +42,21 @@ The process table is a data structure maintained by the operating system to faci
 - Each entry to the process table is called process table entry
 ## Process States
 ![picture 4](images/pic_1619606617432.png)  
-- New: Process is taken into consideration
-- Ready: Process is ready to run
-- Run: Running
-- Wait/Block: waiting as another process is runnning ot Blocked (may be this is dependent on other)
-- 
+- **New**: Process is taken into consideration
+- **Ready**: Process is ready to run
+- **Run**: Running
+- **Wait/Block**: waiting as another process is runnning ot Blocked (may be this is dependent on other processes). Genrally occur when dependent on Input Output (IO)
+- **Suspend Wait**: Waiting for IO
+- **Suspend Ready**: Ready after IO
+- All ths data will be stored in PCB which is linked in Process Table
 ## Transition Diagram
+The Transactions which are used in between Process States
+
+Ex: The IO event Wait and copmletion are two transitions
+
+some people may also represent transitions like this
+![picture 5](images/pic_1619629137103.png)  
+
 ## Context of Process Levels
 ### User Level
 ### kernel Level
