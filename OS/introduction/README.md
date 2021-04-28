@@ -70,3 +70,5 @@ Two types
         - consequences are not that much seviour
         - System will prioratize the needed tasks
         - Ex: Reservation System
+
+## Advantages Of Operating Systems
