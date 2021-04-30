@@ -57,11 +57,22 @@ int main(){
 ```
 In above code The execution process is 
 
-![picture 1](images/.png)  
+![picture 1](images/pic1.png)  
 
 we can see ```code3()``` is working in only child and ```code4()``` is working only in forked child process
 ### exit()
+```cpp
+#include <stdlib.h>
+int main(){
+    exit(EXIT_SUCCESS); /* or return EXIT_SUCCESS */
+}
+```
+- ```exit``` expects a single argument the status 0 for success and other as failure codes
+- so you can use as ```exit(0)```, ```exit(3)``` etc
+- ```EXIT_SUCCESS``` and ```EXIT_FAILURE``` are predefined MACROS for ```exit``` function 
 
+- when ```exit``` is called the process will quiet.
+- In case we are using threads the respective thread will be quitted.
 ### wait()
 
 ### kill()
