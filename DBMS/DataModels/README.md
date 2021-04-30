@@ -176,7 +176,7 @@ Assuming, that a customer orders more than once, the below relation represents o
 CREATE TABLE Customer (
 customer_id int PRIMARY KEY NOT NULL,
 first_name varchar(20) NOT NULL UNIQUE,
-last_name varchar(20),
+last_name varchar(20) NOT NULL UNIQUE,
 Age int NOT NULL check(Age>15),
 Address varchar(20) Default "durgapur"
 );
