@@ -40,4 +40,20 @@ Foreign keys are the attributes of a table that points to the primary key of ano
 - Note: Unlike primary key of any given relation, Foreign Key can be NULL and may contain duplicate tuples. i.e. it need not follow uniqueness constraint. 
 - For Example, STUD_NO in STUDENT_COURSE relation is not unique. It has been repeated for the first and third tuple. However, the STUD_NO in STUDENT relation is a primary key and it needs to be always unique and it cannot be null. 
 
+## Introduction to Relation Algebra and Relational Calculus:
+ In the previous tutorials, we discussed the designing of database using Relational model, E-R diagram and normalization. Now that we have designed the database, we need to store and retrieve data from the database, for this purpose we need to understand the concept of Relational algebra and relational calculus.
+
+### Query Language:
+ A language which is used to store and retrieve data is known as Query language. For example, SQL.
+ These are 2 types:
+#### 1. Procedural Query language:
+In procedural query language user instructs the system to perform a series of operations to produce desired results. Here users tells what data to be retrieved from database and how to retrieve it.
+For example, Let’s take a real world example to understand the procedural language, you are asking your younger brother to make a cup of tea, if you are just telling him to make a tea and not telling the process then it is a non-procedural language, however if you are telling the step by step process like switch on the stove, boil the water, add milk etc. then it is a procedural language.
+
+#### 2. Non-procedural query language:
+In Non-procedural query language, user instructs the system to produce the desired result without telling the step by step process. Here users tells what data to be retrieved from database but doesn’t tell how to retrieve it.
+
+
+
+
 
