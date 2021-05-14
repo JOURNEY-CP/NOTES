@@ -63,6 +63,26 @@ In Non-procedural query language, user instructs the system to produce the desir
 ## Relational Algebra:
 Relational Algebra is a procedural query language that works on relational model.The purpose of a query language is to retrieve data from database or perform various operations such as insert, update, delete on the data. When I say that relational algebra is a procedural query language, it means that it tells what data to be retrieved and how to be retrieved.
 
+## Types Of Operations in Relational Algebra:
+
+### Basic/Fundamental Operations:
+#### Select Operator (σ):
+- It is used to find tuples or rows in the relation which satisfy given condition.
+- It is similar to "where clause in sql".
+- Syntax : σ Condition/Predicate(Relation/Table name)
+
+Table: CUSTOMER
+---------------
+
+Customer_Id     Customer_Name      Customer_City
+-----------     -------------      -------------
+C10100           Steve              Agra
+C10111           Raghu              Agra
+C10115           Chaitanya          Noida
+C10117           Ajeet              Delhi
+C10118           Carl               Delhi
+
+σ Customer_City="Agra" (CUSTOMER)
 
 
 
