@@ -66,10 +66,6 @@ Relational Algebra is a procedural query language that works on relational model
 ## Types Of Operations in Relational Algebra:
 
 ### Basic/Fundamental Operations:
-#### Select Operator (σ):
-- It is used to find tuples or rows in the relation which satisfy given condition.
-- It is similar to "where clause in sql".
-- Syntax : σ Condition/Predicate(Relation/Table name)
 ```
 Table: CUSTOMER
 ---------------
@@ -82,10 +78,87 @@ C10115           Chaitanya          Noida
 C10117           Ajeet              Delhi
 C10118           Carl               Delhi
 ```
+#### Select Operator (σ):
+- It is used to find tuples or rows in the relation which satisfy given condition.
+- It is similar to "where clause in sql".
+- Syntax : σ Condition/Predicate(Relation/Table name).
+  
+Query: 
 
 σ Customer_City="Agra" (CUSTOMER)
 
-#### Projection 
+output:
+```
+Customer_Id   Customer_Name    Customer_City
+-----------   -------------    -------------
+C10100        Steve            Agra
+C10111        Raghu            Agra
+```
+
+#### Project Operator (∏):
+- It is used to select desired columns(or attributes) from a table(or relation).
+- It is similar to "Select statement in SQL".
+- Syntax : ∏ column_name1, column_name2, ...., column_nameN(table_name).
+
+Query: 
+
+∏ Customer_Name, Customer_City (CUSTOMER)
+
+Output:
+```
+Customer_Name      Customer_City
+-------------      -------------
+Steve              Agra
+Raghu              Agra
+Chaitanya          Noida
+Ajeet              Delhi
+Carl               Delhi
+```
+
+#### Union Operator(∪):
+- It is used to select all rows from 2 tables(relations).
+-  Lets say we have two relations R1 and R2 both have same columns and we want to select all the tuples(rows) from these relations then we can apply the union operator on these relations.
+-  The rows (tuples) that are present in both the tables will only appear once in the union set. In short you can say that there are no duplicates present after the union operation.
+-  Syntax : table_name1 ∪ table_name2
+```
+Table 1: COURSE
+
+Course_Id  Student_Name   Student_Id
+---------  ------------   ----------
+C101        Aditya         S901
+C104        Aditya         S901
+C106        Steve          S911
+C109        Paul           S921
+C115        Lucy           S931
+```
+```
+Table 2: STUDENT
+
+Student_Id     Student_Name   Student_Age
+------------   ----------     -----------
+S901           Aditya         19
+S911           Steve          18
+S921           Paul           19
+S931           Lucy           17
+S941           Carl           16
+S951           Rick           18
+```
+Query:
+
+∏ Student_Name (COURSE) ∪ ∏ Student_Name (STUDENT)
+
+Output:
+
+```
+Student_Name
+------------
+Aditya
+Carl
+Paul
+Lucy
+Rick
+Steve
+```
 
 
 
