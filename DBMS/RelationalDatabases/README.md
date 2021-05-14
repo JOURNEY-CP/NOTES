@@ -53,6 +53,15 @@ For example, Let’s take a real world example to understand the procedural lang
 #### 2. Non-procedural query language:
 In Non-procedural query language, user instructs the system to produce the desired result without telling the step by step process. Here users tells what data to be retrieved from database but doesn’t tell how to retrieve it.
 
+![query language](https://beginnersbook.com/wp-content/uploads/2019/02/Relational_algebra__calculus.png)
+
+#### NOTE:
+- Relational algebra and calculus are the theoretical concepts used on relational model.
+- RDBMS is a practical implementation of relational model.
+- SQL is a practical implementation of relational algebra and calculus.
+
+## Relational Algebra:
+Relational Algebra is a procedural query language that works on relational model.The purpose of a query language is to retrieve data from database or perform various operations such as insert, update, delete on the data. When I say that relational algebra is a procedural query language, it means that it tells what data to be retrieved and how to be retrieved.
 
 
 
