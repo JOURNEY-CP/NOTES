@@ -70,7 +70,7 @@ Relational Algebra is a procedural query language that works on relational model
 - It is used to find tuples or rows in the relation which satisfy given condition.
 - It is similar to "where clause in sql".
 - Syntax : σ Condition/Predicate(Relation/Table name)
-
+```
 Table: CUSTOMER
 ---------------
 
@@ -81,8 +81,11 @@ C10111           Raghu              Agra
 C10115           Chaitanya          Noida
 C10117           Ajeet              Delhi
 C10118           Carl               Delhi
+```
 
 σ Customer_City="Agra" (CUSTOMER)
+
+#### Projection 
 
 
 
