@@ -14,6 +14,7 @@
 ## [Multi Threading](MultiThreading)
 
 ## References
-[https://www.javatpoint.com/history-of-operating-system](https://www.javatpoint.com/history-of-operating-system)
-[https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/](https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/)
-[https://www.tutorialspoint.com/operating_system/index.htm](https://www.tutorialspoint.com/operating_system/index.htm)
+- [https://www.javatpoint.com/history-of-operating-system](https://www.javatpoint.com/history-of-operating-system)
+- [https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/](https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/)
+- [https://www.tutorialspoint.com/operating_system/index.htm](https://www.tutorialspoint.com/operating_system/index.htm)
+- [https://www.tutorialspoint.com/unix_system_calls](https://www.tutorialspoint.com/unix_system_calls)

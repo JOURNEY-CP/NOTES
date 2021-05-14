@@ -75,8 +75,39 @@ int main(){
 - In case we are using threads the respective thread will be quitted.
 ### wait()
 
-### kill()
+```pid_t wait(int *stat_loc)```
 
+- if ```wait``` is used the process waits till all child processes completes execution
+- it will return the pid of child process whic is terminated
+- if there are multiple child processes it will return anyone
+- it can also teturns exit codes if child exits
+
+```cpp
+#include<stdio.h>
+#include<sys/wait.h>
+#include<unistd.h>
+ 
+int main(){
+    if (fork()== 0)
+        printf("part1");
+    else{
+        printf("part2\n");
+        wait(NULL);
+        printf("part3");
+    }
+    return 0;
+}
+```
+in this code part1 and part2 may print in any fashion
+but part3 must be printed after part1 only as ```wait``` will wait till completion of child process
+### kill()
+- ```kill``` is used to send signals to other processes
+- ```int kill(pid_t pid, int sig); ```
+  - ```pid=0``` sends signal to all processes in current group
+  - ```pid=+ve``` sends signal to respective process whose wpid matches
+  - ```pid=-1``` sends signals to all processes which are permissible from current process (except init)
+  - ```pid=-ve !=-1``` send signals to all processes of process group which contains respective -pid
+  - ```sig=0``` no signal sent but error checking takes place
 ## Signal Handling
 
 ## Process Sheduling Stratagies
