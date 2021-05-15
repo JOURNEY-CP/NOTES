@@ -120,6 +120,7 @@ Carl               Delhi
 -  Lets say we have two relations R1 and R2 both have same columns and we want to select all the tuples(rows) from these relations then we can apply the union operator on these relations.
 -  The rows (tuples) that are present in both the tables will only appear once in the union set. In short you can say that there are no duplicates present after the union operation.
 -  Syntax : table_name1 ∪ table_name2
+
 ```
 Table 1: COURSE
 
@@ -159,6 +160,112 @@ Lucy
 Rick
 Steve
 ```
+#### Intersection Operator (∩):
+- it is used to select common rows (tuples) from two tables (relations).
+-  Only those rows that are present in both the tables will appear in the result set.
+-  Syntax : table_name1 ∩ table_name2.
 
+Query :
+
+∏ Student_Name (COURSE) ∩ ∏ Student_Name (STUDENT)
+
+Output :
+
+```
+Student_Name
+------------
+Aditya
+Steve
+Paul
+Lucy
+```
+#### Set Difference (-):
+- Lets say we have two relations R1 and R2 and we want to select all those tuples(rows) that are present in Relation R1 but not present in Relation R2, this can be done using Set difference R1 – R2.
+- Syntax : table_name1 - table_name2.
+  
+Query : 
+∏ Student_Name (STUDENT) - ∏ Student_Name (COURSE)
+
+Output : 
+
+```
+Student_Name
+------------
+Carl
+Rick
+```
+#### Cartesian product (X) :
+- Lets say we have two relations R1 and R2 then the cartesian product of these two relations (R1 X R2) would combine each tuple of first relation R1 with the each tuple of second relation R2. I know it sounds confusing but once we take an example of this, you will be able to understand this.
+- Syntax : R1 X R2
+
+```
+Table 1: R1
+
+Col_A    Col_B
+-----    ------
+AA        100
+BB        200
+CC        300 
+```
+
+```
+Table 2: S
+
+Col_X     Col_Y
+-----     -----
+XX         99
+YY         11
+ZZ         101
+```
+Query :
+
+R X S
+
+Output : 
+
+```
+Col_A    Col_B     Col_X     Col_Y
+-----    ------    ------    ------
+AA        100      XX         99
+AA        100      YY         11
+AA        100      ZZ         101
+BB        200      XX         99
+BB        200      YY         11
+BB        200      ZZ         101
+CC        300      XX         99
+CC        300      YY         11
+CC        300      ZZ         101
+```
+
+#### Rename (ρ) :
+- It is used to rename a relation or an attribute of a relation.
+- Syntax : ρ(new_relation_name, old_relation_name).
+
+```
+Table: CUSTOMER
+
+Customer_Id     Customer_Name      Customer_City
+-----------     -------------      -------------
+C10100           Steve              Agra
+C10111           Raghu              Agra
+C10115           Chaitanya          Noida
+C10117           Ajeet              Delhi
+C10118           Carl               Delhi
+```
+Query :
+ 
+ρ(CUST_NAMES, ∏(Customer_Name)(CUSTOMER))
+
+Output :
+
+```
+CUST_NAMES
+----------
+Steve
+Raghu
+Chaitanya
+Ajeet
+Carl
+```
 
 
