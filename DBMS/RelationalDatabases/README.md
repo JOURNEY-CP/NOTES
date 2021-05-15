@@ -199,7 +199,7 @@ Rick
 - Syntax : R1 X R2
 
 ```
-Table 1: R1
+Table 1: R
 
 Col_A    Col_B
 -----    ------
@@ -268,4 +268,50 @@ Ajeet
 Carl
 ```
 
+## Relational Calculus :
+Relational calculus is a non-procedural query language that tells the system what data to be retrieved but doesn’t tell how to retrieve it.
 
+![relational calculus](https://static.javatpoint.com/dbms/images/dbms-relational-calculus.png)
+
+### Tuple Relational Calculus : 
+- It is used for selecting those tuples that satisfy the given condition.
+- Syntax : {T | P (T)}   or {T | Condition (T)} Where, T is the resulting tuples and P(T) is the condition used to fetch T.
+
+```
+First_Name     Last_Name     Age
+----------     ---------     ----
+Ajeet          Singh         30
+Chaitanya      Singh         31
+Rajeev         Bhatia        27
+Carl           Pratap        28
+```
+Query to display all the details of students where Last name is ‘Singh’ :
+
+{ t | Student(t) AND t.Last_Name = 'Singh' }
+
+Output : 
+
+```
+First_Name     Last_Name     Age
+----------     ---------     ----
+Ajeet          Singh         30
+Chaitanya      Singh         31
+```
+
+### Domain Relational Calculus : 
+- In domain relational calculus the records are filtered based on the domains.
+- Syntax : { a1, a2, a3, ..., an | P (a1, a2, a3, ... ,an)} Where a1, a2 are attributes and P stands for formula built by inner attributes.
+
+Query to find the first name and age of students where student age is greater than 27 : 
+
+{< First_Name, Age > | ∈ Student ∧ Age > 27}
+
+Output :
+
+```
+First_Name     Age
+----------     ----
+Ajeet          30
+Chaitanya      31
+Carl           28
+```
