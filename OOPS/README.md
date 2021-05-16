@@ -33,7 +33,7 @@ Some Other terms in class
 - Constructor is called at initialization of class
 - Destructor is called at end of class (when class scope ends);
  
-## Static Data in Class [^1]
+## Static Data in Class(DOUBT HERE)
 - Data is not created in every instance
 - It is the shared data between all instances
 - We can access static data by using acessSpecifier (::) 
@@ -77,6 +77,80 @@ Hiding Unnesassary data
 ## Encapsulation
 The process of placig all methods data and related content at one place is called Encapsulation
 ## Inheritence
+> A process of achiving parent child relation
+```cpp
+class Base{
+public:
+    Base(){
+        cout<<"Base";
+    }
+};
+class Derived:public Base{
+    Derived():Base(){
+        cout<<"Derived";
+    }
+};
+int main(){
+    Derived D;
+}
+```
+> Output: Base Derived
+
+At first constructor of base is called and then constructor of derived is called
+### Hierchial Inheritence
+> Many classes derives from same base class
+
+![hierchial](images/hierchial.jpeg)
+### Multi Level Inheritence
+> A class can be derived from other derived class
+
+![multi level](images/multilevel.jpeg)
+### Multiple Inheritence
+A class can be inherited from more than one base classes
+
+![multiple](images/multiple.jpeg)
+```cpp
+class Base1{};
+class Base2{};
+class Derived:public Base1,public Base2{
+    Derived():Base2(),Base1(){
+
+    }
+}
+```
+> execution of constructors : Base1 Base2 Derived
+- It follows the order specified after ```class Derived:```
+### Hybrid inheritence
+> A mixture of one or more types
+
+Ex
+![hybrid](images/hybrid.jpeg)
+### Access specifiers of base class
+```cpp
+class Base(){
+    public: int a;
+    protected: int b;
+    private: int c;
+};
+class Derived1:public Base{
+
+};
+class Derived1:protected Base{
+
+};
+class Derived1:private Base{
+
+};
+```
+| Type | A(public) | B(protected) | C(private) |
+|----|----|----|----|
+|Derived1(public)|public|protected|private|
+|Derived2(protected)|protected|protected|private|
+|Derived3(private)|private|private|private|
+
+> its too simple just upgrade the access time to as much as possible ```public<protected<private```
+> 
+> i.e max(accessType in base,accessType when deriving)
 ## Polimorphism
 > many forms in one name
 ### Compile Time polimorphism
@@ -133,7 +207,5 @@ public:
     func(int);//as this is declared all the four func methods in Base are no longer accessible  (THEY ARE HIDDEN);
 };
 ```
-(NO LONGER ACCESSIBLE FROM OUTSIDE BUT CAN BE USED INTERNALLY [^1])
+(NO LONGER ACCESSIBLE FROM OUTSIDE BUT CAN BE USED INTERNALLY(DOUBT HERE))
 
-
-[^1]: Subject to change Doubt in this part.
