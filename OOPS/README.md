@@ -135,10 +135,10 @@ class Base(){
 class Derived1:public Base{
 
 };
-class Derived1:protected Base{
+class Derived2:protected Base{
 
 };
-class Derived1:private Base{
+class Derived3:private Base{
 
 };
 ```
