@@ -112,7 +112,7 @@ At first constructor of base is called and then constructor of derived is called
 
 ![multi level](images/multilevel.jpeg)
 ### Multiple Inheritence
-A class can be inherited from more than one base classes
+> A class can be inherited from more than one base classes
 
 ![multiple](images/multiple.jpeg)
 ```cpp
@@ -131,7 +131,8 @@ class Derived:public Base1,public Base2{
 ### Hybrid inheritence
 > A mixture of one or more types
 
-Ex
+Example
+
 ![hybrid](images/hybrid.jpeg)
 ### Access specifiers of base class
 ```cpp
@@ -169,6 +170,7 @@ class Derived3:private Base{
 
 - functional overloading
 - operator overloading
+
 ### Functional Overloading
 - same name can be used multiple times.
 - Which code to use will depend on set of arguments passed.
