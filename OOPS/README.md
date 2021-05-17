@@ -1,12 +1,14 @@
 # Object Oriented Programming
 ## Class
 Its like a signature which consists all data methods access specifiers etc
+
 ```cpp
 class Person{
     // your Code
-};
+}; 
 ```
 - this is a pointer to the class itself
+
 ```cpp
 class Person{
     int a=10;
@@ -20,6 +22,7 @@ int main(){
     Person p(5);
 }
 ```
+
 ## Object
 Instance of class is called a object
 ```cpp
@@ -37,6 +40,7 @@ Some Other terms in class
 - Data is not created in every instance
 - It is the shared data between all instances
 - We can access static data by using acessSpecifier (::) 
+
 ```cpp
 class Person{
     static int x;
@@ -67,6 +71,7 @@ int main(){
     Person::printX();//7 is printed
 }
 ```
+
 ## Abstraction
 Hiding Unnesassary data
 ### Acess Specifiers
@@ -78,6 +83,7 @@ Hiding Unnesassary data
 The process of placig all methods data and related content at one place is called Encapsulation
 ## Inheritence
 > A process of achiving parent child relation
+
 ```cpp
 class Base{
 public:
@@ -119,7 +125,9 @@ class Derived:public Base1,public Base2{
 }
 ```
 > execution of constructors : Base1 Base2 Derived
+
 - It follows the order specified after ```class Derived:```
+
 ### Hybrid inheritence
 > A mixture of one or more types
 
@@ -142,6 +150,7 @@ class Derived3:private Base{
 
 };
 ```
+
 | Type | A(public) | B(protected) | C(private) |
 |----|----|----|----|
 |Derived1(public)|public|protected|private|
@@ -151,16 +160,20 @@ class Derived3:private Base{
 > its too simple just upgrade the access time to as much as possible ```public<protected<private```
 > 
 > i.e max(accessType in base,accessType when deriving)
+
 ## Polimorphism
 > many forms in one name
+
 ### Compile Time polimorphism
 > Resolves at compile time
+
 - functional overloading
 - operator overloading
 ### Functional Overloading
 - same name can be used multiple times.
 - Which code to use will depend on set of arguments passed.
 - All these types of overloading are possible.
+
 ```cpp
 func();
 func(int a);
@@ -171,13 +184,15 @@ func(int a,double b);
 
 ### Operator overloading
 - same as function overloading but we use operatrs here
--  No of arguments must be fixed i.e 2 for binary and 1 for unary operands
+-  No of arguments must be fixed i.e 2 for binary and 1 for unary operands.
+
 ```cpp
 int operator+(int a,int b){
 
 }
 ```
 - we can reduce one argument while using in a class and then first arg is from class
+
 ```cpp
 class Person(){
     int val;
