@@ -1,3 +1,6 @@
+* TOC
+{:toc}
+
 # Object Oriented Programming
 ## Class
 Its like a signature which consists all data methods access specifiers etc
