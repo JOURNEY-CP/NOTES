@@ -1,6 +1,6 @@
 # Object Oriented Programming
 
-1. TOC
+- TOC
 {:toc}
 
 # Class
