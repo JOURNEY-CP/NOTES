@@ -8,7 +8,10 @@
 
 | TOC |
 |----|
-| - TOC {:toc} |
+| 
+- TOC
+{:toc} 
+|
 
 # Class
 Its like a signature which consists all data methods access specifiers etc
