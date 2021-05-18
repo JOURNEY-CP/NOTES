@@ -3,6 +3,10 @@
 - TOC
 {:toc}
 
+| TOC |
+|----|
+| - TOC {:toc} |
+
 # Class
 Its like a signature which consists all data methods access specifiers etc
 
