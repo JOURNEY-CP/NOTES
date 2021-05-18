@@ -1,4 +1,4 @@
-* TOC
+- TOC
 {:toc}
 
 # Object Oriented Programming
