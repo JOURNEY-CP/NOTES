@@ -1,4 +1,4 @@
-<h1>Object Oriented Programming</h1>
+<h1 class="no-toc">Object Oriented Programming</h1>
 
 - TOC
 {:toc}
