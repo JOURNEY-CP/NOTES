@@ -300,7 +300,7 @@ Chaitanya      Singh         31
 
 ### Domain Relational Calculus : 
 - In domain relational calculus the records are filtered based on the domains.
-- Syntax :  a1, a2, a3, ..., an | P (a1, a2, a3, ... ,an)} Where a1, a2 are attributes and P stands for formula built by inner attributes.
+- Syntax : { a1, a2, a3, ..., an | P (a1, a2, a3, ... ,an)} Where a1, a2 are attributes and P stands for formula built by inner attributes.
 
 Query to find the first name and age of students where student age is greater than 27 : 
 

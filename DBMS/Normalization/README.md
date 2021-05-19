@@ -1,1 +1,50 @@
-Work in progress
+## Functional Dependency in DBMS(FD) : 
+The attributes of a table is said to be dependent on each other when an attribute is uniquely identifies another attribute of same table.It is denoted by an arrow "→". The functional dependency of X on Y is represented by X → Y.
+
+Formally, If column A of a table uniquely identifies the column B of same table then it can represented as A->B (Attribute B is functionally dependent on attribute A).
+
+For example, Suppose we have a student table with attributes: Stu_Id, Stu_Name, Stu_Age. Here Stu_Id attribute uniquely identifies the Stu_Name attribute of student table because if we know the student id we can tell the student name associated with it. This is known as functional dependency and can be written as Stu_Id->Stu_Name or in words we can say Stu_Name is functionally dependent on Stu_Id.
+
+## Rules of Functional Dependencies : 
+### Reflexive Rule :
+In the reflexive rule, if Y is a subset of X, then X determines Y.
+
+```
+If X ⊇ Y then X → Y 
+```
+### Augmentation Rule :
+The augmentation is also called as a partial dependency. In augmentation, if X determines Y, then XZ determines YZ for any Z in attribute set.
+
+```
+If X → Y then XZ → YZ  
+```
+Example :
+```
+For R(ABCD),  if A → B then AC → BC
+```
+### Transitive Rule  :
+In the transitive rule, if X determines Y and Y determine Z, then X must also determine Z.
+
+```
+If X → Y and Y → Z then X → Z 
+```
+### Union Rule :
+Union rule says, if X determines Y and X determines Z, then X must also determine Y and Z.
+
+```
+If X → Y and X → Z then X → YZ  
+```
+### Decomposition Rule :
+Decomposition rule is also known as project rule. It is the reverse of union rule.This Rule says, if X determines Y and Z, then X determines Y and X determines Z separately.
+
+```
+If X → YZ then X → Y and X → Z
+```
+### Pseudo Transitive Rule :
+In Pseudo transitive Rule, if X determines Y and YZ determines W, then XZ determines W.
+
+```
+If X → Y and YZ → W then XZ → W 
+```
+
+
