@@ -1,6 +1,7 @@
 # NOTES
 Private notes on various topics
-(this notes is a self prepared by a team and the accuracy of information provided is not guerented. follow on own risk)
+- this notes is a self prepared by a team. Follow if you belive the team
+- in case of any errors or questions start a discussion at [discussions](https://github.com/JOURNEY-CP/NOTES/discussions) or [mail us](mailto:journeynitdgp@gmail.com)
 
 ## [REACT](REACT)
 
@@ -15,6 +16,8 @@ Private notes on various topics
 ## [DBMS](DBMS)
 
 ## [OS](OS)
+
+## [OOPS](OOPS)
 
 ## [NETWORKING](NETWORKING)
 
