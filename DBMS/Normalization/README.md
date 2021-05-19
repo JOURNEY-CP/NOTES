@@ -46,5 +46,24 @@ In Pseudo transitive Rule, if X determines Y and YZ determines W, then XZ determ
 ```
 If X → Y and YZ → W then XZ → W 
 ```
+## 4 types :
+### Multivalued dependency :
+Multivalued dependency occurs when there are more than one independent multivalued attributes in a table.
+
+For example: Consider a bike manufacture company, which produces two colors (Black and white) in each model every year.
+
+```
+bike_model	manuf_year	  color
+M1001	    2007	      Black
+M1001	    2007	      Red
+M2012	    2008	      Black
+M2012	    2008	      Red
+M2222	    2009	      Black
+M2222	    2009	      Red
+```
+Here columns manuf_year and color are independent of each other and dependent on bike_model. In this case these two columns are said to be multivalued dependent on bike_model. These dependencies can be represented like this.
+```
+bike_model ->> manuf_year
+```
 
 
