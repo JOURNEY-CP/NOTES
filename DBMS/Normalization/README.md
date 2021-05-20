@@ -65,5 +65,57 @@ Here columns manuf_year and color are independent of each other and dependent on
 ```
 bike_model ->> manuf_year
 ```
+### Trivial functional dependency :
+The dependency of an attribute on a set of attributes is known as trivial functional dependency if the set of attributes includes that attribute.
+- Symbolically : A ->B is trivial functional dependency if B is a subset of A.
+- The following dependencies are also trivial: A->A & B->B.
+
+```
+Emp_id	Emp_name
+AS555	Harry
+AS811	George
+AS999	Kevin
+```
+
+Here, {Emp_id, Emp_name} -> Emp_id is a trivial functional dependency as Emp_id is a subset of {Emp_id,Emp_name}.
+### Non-Trivial functional dependency :
+If a functional dependency X->Y holds true where Y is not a subset of X then this dependency is called non trivial Functional dependency.
+```
+Emp_id	Emp_name  Emp_address
+AS555	Harry     hyderabad
+AS811	George    durgapur
+AS999	Kevin     bangalore
+```
+The following functional dependencies are non-trivial :
+
+emp_id -> emp_name (emp_name is not a subset of emp_id)
+
+emp_id -> emp_address (emp_address is not a subset of emp_id)
+
+### Transitive dependency :
+A functional dependency is said to be transitive if it is indirectly formed by two functional dependencies.
+
+X -> Z is a transitive dependency if the following three functional dependencies hold true:
+- X->Y
+- Y does not ->X
+- Y->Z
+
+Note: A transitive dependency can only occur in a relation of three of more attributes. This dependency helps us normalizing the database in 3NF (3rd Normal Form).
+
+```
+Book	            Author	                Author_age
+Game of Thrones	    George R. R. Martin	    66
+Harry Potter	    J. K. Rowling	        49
+Dying of the Light	George R. R. Martin	    66
+```
+Here, {Book} ->{Author} (if we know the book, we knows the author name)
+
+{Author} does not ->{Book}
+
+{Author} -> {Author_age}
+
+Therefore as per rule of transitive dependency {Book} -> {Author_age} should hold, that makes sense because if we know the book name we can know the author’s age.
+
+
 
 
