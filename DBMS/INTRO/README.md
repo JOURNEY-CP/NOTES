@@ -95,13 +95,13 @@ So we need to optamize two feutures
 ## Database Languages
 1. Data Definition Language (DDL)
     - Used to create the schema, tables indexes etc
-    - CREATE ALTER DROP TRUNCATE RENAME COMMENT
+    - ```CREATE``` ```ALTER``` ```DROP``` ```TRUNCATE``` ```RENAME``` ```COMMENT```
 2. Data Manipulation Language (DML)
     - Used to add and manipulate data 
-    - SELECT INSERT UPDATE DELETE
+    - ```SELECT``` ```INSERT``` ```UPDATE``` ```DELETE```
 3. Data Control language (DCL)
     - Used to define access to users
-    - GRANT REVOKE
+    - ```GRANT``` ```REVOKE```
 4. Transaction Control Language(TCL)
     - The changes in the database that we made using DML commands are either performed or rollbacked using TCL.
-    - COMMIT ROLLBACK
+    - ```COMMIT``` ```ROLLBACK```
