@@ -13,6 +13,7 @@ So we need to optamize two feutures
 ### Drawbacks of File system
 - Data redundancy: 
   - Duplicate data
+  - so much memory is wated
   - Ex : student is enrolled for two courses, the same student details in such case will be stored twice, which will take more storage than needed
 - Data inconsistency: 
   - If duplicate data is found we need to update at all places else data inconsistancy will occur.
@@ -41,12 +42,14 @@ So we need to optamize two feutures
 - Client -> Client App/local db
 - client has complete data
 - no need on internet
+
 ### two-tier
 - Client dirctly access data from sql server
 - Client -> Client App ------------> Db Server
 - Components
   - Client has user and db app
   - server has only db server
+
 ### three-tier
 - Client asks data from his app and it askes data to app at server and in contacts db server
 - Client -> Client App ------------> Server App -> Db Server

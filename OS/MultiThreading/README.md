@@ -11,4 +11,3 @@ A thread is a flow of execution through the process code, with its own program c
 
 ## Use of POSIX Library Threads
 
-dfs
