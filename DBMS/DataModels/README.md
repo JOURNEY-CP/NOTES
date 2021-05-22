@@ -1,3 +1,6 @@
+- TOC
+{:toc}
+
 # Data Models in DBMS
 Data Model gives us an idea that how the final system will look like after its complete implementation. It defines the data elements and the relationships between the data elements. Data Models are used to show how data is stored, connected, accessed and updated in the database management system. Here, we use a set of symbols and text to represent the information so that members of the organisation can communicate and understand it.
 
