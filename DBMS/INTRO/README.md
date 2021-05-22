@@ -84,7 +84,7 @@ So we need to optamize two feutures
 ### Schema
 - The design of database in View layer is View schema
 - The design of database in Logical layer is Logical schema
-- The design of database in View layer is View schema
+- The design of database in Physical layer is Physical schema
 
 ### Instance
 - The core desidn is schema and all details(rows) of a particular thing is instance
