@@ -1,3 +1,4 @@
 work in progress
 
-[Interview Questions JavaTpoint](https://www.javatpoint.com/networking-interview-questions)
+- [JavaTpoint](https://www.javatpoint.com/networking-interview-questions)
+- [Interview bit](https://www.interviewbit.com/networking-interview-questions/)
